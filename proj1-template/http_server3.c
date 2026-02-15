@@ -1,9 +1,9 @@
 
 /*
- * CS 1652 Project 1 
+ * CS 1652 Project 1
  * (c) Jack Lange, 2020
  * (c) <Student names here>
- * 
+ *
  * Computer Science Department
  * University of Pittsburgh
  */
