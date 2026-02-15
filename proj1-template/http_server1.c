@@ -44,7 +44,7 @@ handle_connection(int sock)
     /* first read loop -- get request and headers*/
     //read until blank line: \r\n\r\n the first sequence to end header, second for new line
     char buf[BUFSIZE];
-    size_t bytes_read = 0;
+    ssize_t bytes_read = 0;
     int total_bytes = 0;
 
     while(1) {
@@ -186,6 +186,9 @@ main(int argc, char ** argv)
         }
         /* handle connections */
         ret = handle_connection(client_sock);
+        if(ret < 0) {
+            fprintf(stderr, "Error handling connection\n");
+        }
 		//(void)ret; // DELETE ME
     }
 }

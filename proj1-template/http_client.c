@@ -117,7 +117,7 @@ main(int argc, char ** argv)
     /* first read loop -- read headers */
     char response[BUFSIZE];
     int total_bytes = 0;
-    size_t bytes_read = 0;
+    ssize_t bytes_read = 0;
     
     while(1)
     {
