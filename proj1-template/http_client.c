@@ -135,7 +135,7 @@ main(int argc, char ** argv)
         total_bytes += bytes_read;
 
         //check for end of headers
-        if(strstr(response, "\r\n\r\n") != NULL || strstr(response, "\n\n") != NULL) {
+        if(strstr(response, "\r\n\r\n") != NULL) {
             break;
         }
     }
@@ -150,11 +150,6 @@ main(int argc, char ** argv)
     // Find where headers end
     char *body_start = strstr(response, "\r\n\r\n");
     int header_end_len = 4;
-
-    if (body_start == NULL) {
-        body_start = strstr(response, "\n\n");
-        header_end_len = 2;
-    }
 
     if (body_start == NULL) {
         // No header terminator found, all data is headers

@@ -64,7 +64,7 @@ handle_connection(int sock)
         total_bytes += bytes_read;
 
         // Check for end of headers
-        if (strstr(buf, "\r\n\r\n") != NULL || strstr(buf, "\n\n") != NULL) {
+        if (strstr(buf, "\r\n\r\n") != NULL) {
             break;
         }
     }
