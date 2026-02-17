@@ -434,3 +434,6 @@ is as follows:
 
 -   Later RFCs may be of interest, although they are more complex than
     what you need to do for this assignment (e.g. HTTP 1.1 RFC 2616)
+
+
+The architecture used for testing the project, is the virtual machine in workstation pro: x86_64.
