@@ -100,7 +100,7 @@ handle_connection(int sock)
 	
 	/* send response */
     char file_buf[BUFSIZE];
-    int file_len = 0;
+    
     //get file size
     fseek(file, 0L, SEEK_END); // Move pointer to the end of the file
     long int size = ftell(file); // Get current position (file size)
@@ -119,7 +119,7 @@ handle_connection(int sock)
         if (bytes_read <= 0) {
             break;
         }
-        file_len += bytes_read;
+     
         write(sock, file_buf, bytes_read);
     }
 

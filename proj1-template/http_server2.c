@@ -2,7 +2,7 @@
  * CS 1652 Project 1 
  * (c) Jack Lange, 2020
  * (c) Amy Babay, 2022
- * (c) <Student names here>
+ * (c) Justin Li & Utkarsh Tiwari 
  * 
  * Computer Science Department
  * University of Pittsburgh
